@@ -1,0 +1,349 @@
+<!DOCTYPE html><html class="light" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "inverse-on-surface": "#eff1f1",
+                "tertiary-container": "#693527",
+                "secondary-container": "#cfe6f2",
+                "surface-bright": "#f8fafa",
+                "surface-container-highest": "#e1e3e3",
+                "surface": "#f8fafa",
+                "on-tertiary-fixed": "#370e04",
+                "primary-fixed-dim": "#94d3c1",
+                "outline": "#707975",
+                "on-tertiary-fixed-variant": "#6d382a",
+                "surface-container-high": "#e6e8e8",
+                "surface-container-low": "#f2f4f4",
+                "on-secondary-container": "#526772",
+                "on-primary-fixed-variant": "#065043",
+                "background": "#f8fafa",
+                "surface-variant": "#e1e3e3",
+                "secondary": "#4c616c",
+                "on-surface-variant": "#3f4945",
+                "secondary-fixed": "#cfe6f2",
+                "primary-fixed": "#afefdd",
+                "on-error-container": "#93000a",
+                "on-primary-fixed": "#00201a",
+                "on-secondary-fixed-variant": "#354a53",
+                "error-container": "#ffdad6",
+                "tertiary": "#4e2013",
+                "primary-container": "#004d40",
+                "surface-tint": "#29695b",
+                "surface-container-lowest": "#ffffff",
+                "tertiary-fixed-dim": "#ffb5a1",
+                "primary": "#00342b",
+                "inverse-surface": "#2e3131",
+                "secondary-fixed-dim": "#b4cad6",
+                "on-error": "#ffffff",
+                "on-surface": "#191c1d",
+                "error": "#ba1a1a",
+                "surface-dim": "#d8dada",
+                "on-primary": "#ffffff",
+                "on-secondary": "#ffffff",
+                "inverse-primary": "#94d3c1",
+                "tertiary-fixed": "#ffdbd1",
+                "on-background": "#191c1d",
+                "on-tertiary": "#ffffff",
+                "outline-variant": "#bfc9c4",
+                "surface-container": "#eceeee",
+                "on-primary-container": "#7ebdac",
+                "on-tertiary-container": "#e89f8c",
+                "on-secondary-fixed": "#071e27"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "fontFamily": {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-teal-900 dark:text-teal-100 italic font-headline tracking-tight" style="">
+                Barangg Bekas Berrkualitas
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-teal-700 dark:text-teal-300 border-b-2 border-teal-700 pb-1 font-headline tracking-tight font-bold text-lg" href="#home" style="">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-800 transition-colors font-headline tracking-tight font-bold text-lg" href="#catalog" style="">Beranda</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-teal-800 transition-colors font-headline tracking-tight font-bold text-lg" href="#about" style="">Tentang Kami</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-2 bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-bold hover:scale-95 duration-200 ease-in-out transition-all" href="keranjang.html" style="">
+<span class="material-symbols-outlined" style="">shopping_cart</span>
+                    Stock
+                </a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="pt-32 pb-20 px-8 max-w-7xl mx-auto" id="home">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-sm font-label tracking-widest uppercase font-bold" style="">SETIAP BARANG ADA HARGA</span>
+<h1 class="text-6xl md:text-7xl font-headline font-extrabold text-primary leading-[1.1] tracking-tight" style=""><span style="font-weight: 400;" class="">BERGAYALAH DENGAN BARANG BEKAS BERKUALITAS!!</span></h1>
+<p class="text-lg text-secondary max-w-xl leading-relaxed" style="">
+                    Kami percaya setiap helai pakaian memiliki cerita. Melalui kurasi ketat, kami menghadirkan koleksi pre-loved premium yang menggabungkan gaya editorial dengan keberlanjutan lingkungan.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all text-center" href="keranjang.html" style="">Jelajahi Koleksi</a>
+
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10">
+<img alt="Premium vintage jacket" class="w-full h-full object-cover" data-alt="Close-up of a high-end vintage suede jacket with detailed stitching on a minimal studio background, warm editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASzNWJ1LrmzSfm7D6ljPRkZ0L7YnzHZ89xAuOhsxqh-BdYuc6IWTcjkPZS6ZZ4-7d7LbilXY-F6qMUS2AjeNshFIj52J4CSDY5Nl3rQuG06k0pf0IIyXPEkHTilhVL7nFf696Q7IzFJI0tBVl-SNaMy7ByZ7hr0yAFTiIhq73X1az9UDJiHK5vOV-RbHkbGbX2_GjE4BJGksJMjwh0bAun1DX57zQ2RrONLS8oLo6sIt8R6k9OEHmTRnEvL31IHigCYRAMMumFPPA" style="">
+</div>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 rounded-xl overflow-hidden shadow-xl z-20 border-8 border-surface">
+<img alt="Red classic sneakers" class="w-full h-full object-cover" data-alt="Iconic red designer sneakers sitting on a clean marble pedestal, high contrast professional product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNFZww2Of9sr_FzyCETB0Uojy_1J8HB8eKQ4WLr9RnheEMll3LgkxOSNcfdP8WnZ-PSpDAAQsKBSKEaUNyBXfv76EhZZPIlku3mGmW8NEUq3qfLfRE-SmqfUDcjBBzwa4Q0eF-UBgsXoAB1TRcyD9oWVYazbRcpuSnrG85b-VXJHceBLq0Yv3ZLYcUO_oYF9YTf855gLc7rYpTGZf4rh8C6vIlTJcX4D8RvufIROgniZyPpdG8vdbiF0N70znPl3J5ZtcHEQMc33E" style="">
+</div>
+<div class="absolute -top-10 -right-4 w-32 h-32 bg-tertiary-container/10 backdrop-blur-3xl rounded-full -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Catalog Section -->
+<section class="py-24 bg-surface-container-low" id="catalog">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div class="space-y-4">
+<h2 class="text-4xl font-headline font-extrabold text-primary" style="">Koleksi Terpilih</h2>
+<p class="text-secondary" style="">Setiap item telah melalui proses inspeksi kualitas 12 titik.</p>
+</div>
+<div class="hidden md:flex gap-2">
+<button class="p-4 rounded-full bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" style="">
+<span class="material-symbols-outlined" style="">arrow_back</span>
+</button>
+<button class="p-4 rounded-full bg-surface-container-lowest text-primary hover:bg-primary hover:text-on-primary transition-all shadow-sm" style="">
+<span class="material-symbols-outlined" style="">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl space-y-6 transition-all duration-300 hover:scale-[1.02]">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low">
+<img alt="Premium Coat" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Long wool camel coat displayed elegantly on a wooden hanger, soft natural lighting, boutique aesthetic" src="https://img.lazcdn.com/g/ff/kf/Sf8408b6d4e754bdf8472917605f0d496u.jpg_960x960q80.jpg_.webp" style="">
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-headline font-bold text-on-surface" style="">JAKET OUTDOOR&nbsp;</h3>
+<span class="text-sm font-label text-tertiary font-bold tracking-tighter" style="">NEW</span>
+</div>
+<p class="text-primary font-bold text-xl" style="">Rp 850.000</p>
+</div>
+<a class="w-full py-3 rounded-full bg-primary text-on-primary font-bold tracking-wide hover:opacity-90 transition-opacity text-center inline-block" href="tnf.html" style="">PESAN SEKARANG</a>
+</div>
+<!-- Product Card 2 -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl space-y-6 transition-all duration-300 hover:scale-[1.02]">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low">
+<img alt="Green Sneakers" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern green athletic shoes on a clean light grey surface, minimal composition, soft shadows" src="https://senikersku.com/wp-content/uploads/2024/10/474506-1.png" style="">
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-headline font-bold text-on-surface" style="">SALOMON XT-6&nbsp;</h3>
+<span class="text-sm font-label text-secondary font-bold" style="">Kualitas A+</span>
+</div>
+<p class="text-primary font-bold text-xl" style="">Rp 1.800,000</p>
+</div>
+<a class="w-full py-3 rounded-full bg-primary text-on-primary font-bold tracking-wide hover:opacity-90 transition-opacity text-center inline-block" href="salomon.html" style="">PESAN SEKARANG</a>
+</div>
+<!-- Product Card 3 -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl space-y-6 transition-all duration-300 hover:scale-[1.02]">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low">
+<img alt="Designer Heels" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Luxury blue high heel shoes on a velvet surface, dramatic lighting highlighting the texture and quality" src="https://media.karousell.com/media/photos/products/2023/7/25/hoodie_lacoste_big_logo_crocod_1690268672_b00eccbf_progressive.jpg" style="">
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-headline font-bold text-on-surface" style="">HOODIE LACOSTE</h3>
+<span class="text-sm font-label text-tertiary font-bold" style="">HOT</span>
+</div>
+<p class="text-primary font-bold text-xl" style="">Rp 350.000</p>
+</div>
+<a class="w-full py-3 rounded-full bg-primary text-on-primary font-bold tracking-wide hover:opacity-90 transition-opacity text-center inline-block" href="lacoste.html" style="">PESAN SEKARANG</a>
+</div>
+<!-- Product Card 4 -->
+<div class="group bg-surface-container-lowest p-6 rounded-xl space-y-6 transition-all duration-300 hover:scale-[1.02]">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low">
+<img alt="Denim Jacket" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Vintage washed denim jacket draped over an aesthetic chair, sunlight streaming through a window" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Nwab39cJWbFQfBNUjGpCU5k4PqMRrY0PHg&amp;s" style="">
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="text-lg font-headline font-bold text-on-surface" style="">JEKET GOGLE C.P</h3>
+<span class="text-sm font-label text-secondary font-bold" style="">VINTAGE</span>
+</div>
+<p class="text-primary font-bold text-xl" style="">Rp 1.200.000</p>
+</div>
+<a class="w-full py-3 rounded-full bg-primary text-on-primary font-bold tracking-wide hover:opacity-90 transition-opacity text-center inline-block" href="cp.html" style="">PESAN SEKARANG</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Tentang Kami -->
+<section class="py-24 px-8 max-w-7xl mx-auto" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<img alt="Shop interior" class="rounded-xl aspect-[3/4] object-cover shadow-lg" data-alt="Minimalist clothing store interior with wooden racks and white walls, organized and premium boutique feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLW-ftLO1MlazbXNmxC2Ury4UaRAmVXSarqL2hjYqD8XxMiKbeqxVUHtYJu2wAG_MwDTzQ1CG4XgMdJwE_k_QDsmQVwXMJol8vwpe8AXZoHVTL0C5cZrBXO9dIv-8x5ppWgDsBbUatEQlHDzzIuTReD8EHb0h7bQGqFhWZQe1OIFw84mL7aI5ZVqFFUOhwvYb3z8pMOqKD8f2CXQUu9ijfPfffUZgzygWz7T9IeUcdfmc_8gUPVuFXM3q7ZSWll6c0ifCm0kDoLPM" style="">
+<div class="bg-primary text-on-primary p-8 rounded-xl aspect-square flex flex-col justify-center">
+<p class="text-4xl font-headline font-extrabold" style="">100%</p>
+<p class="text-sm font-label uppercase tracking-widest mt-2" style="">ORIGINAL</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-secondary-container text-on-secondary-container p-8 rounded-xl aspect-square flex flex-col justify-center">
+<p class="text-4xl font-headline font-extrabold" style="">BOSS.</p>
+<p class="text-sm font-label uppercase tracking-widest mt-2" style="">BERBELANJA DENGAN AMAN DAN NYAMAN</p>
+</div>
+<img alt="Quality check" class="rounded-xl aspect-[3/4] object-cover shadow-lg" data-alt="Hands holding a premium fabric close-up, inspecting quality in natural daylight, focus on texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA28XtwVyXKKVqiwqBAAuGksa_E99ECR28jQmTsfMBE8A5_QpFKhl1Lqn4kfw1LqPfFCv8QyNBDpZaJHhyWQZ4lVXZOLa9IDfhtp9QPRKbJmDmBmPPSdvCNU8yRG-c9WWigAGR-O3un_6o1mRWMFmqPTAOPaIH9ZjhTsrk44olQxE4VvTJe5BAFnE7arSqnHVz3SbU8XOT1WNAKU-KfEXpZaStOrWg3sp7paD3qIHMRb1SPqIrXxUAhlvzzAalvUZAL8MvTGPa9KS8" style="">
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="text-5xl font-headline font-extrabold text-primary tracking-tight" style="">Mengapa Memilih Kami?</h2>
+<div class="space-y-6">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">verified</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold text-on-surface" style="">Kualitas Terjamin</h4>
+<p class="text-secondary leading-relaxed" style="">Setiap produk melewati 12 tahap kurasi untuk memastikan kondisi terbaik bagi Anda.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">eco</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold text-on-surface" style="">Dukungan Berkelanjutan</h4>
+<p class="text-secondary leading-relaxed" style="">Berbelanja di sini berarti Anda turut serta mengurangi limbah tekstil dunia.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="">package_2</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold text-on-surface" style="">Pengemasan Premium</h4>
+<p class="text-secondary leading-relaxed" style="">Kami mengemas setiap pesanan layaknya barang baru dengan material ramah lingkungan.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Map & Contact -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-5 space-y-8">
+<h2 class="text-4xl font-headline font-extrabold text-primary" style="">Kunjungi Showroom Kami</h2>
+<p class="text-secondary leading-relaxed" style="">Ingin melihat koleksi secara langsung? Datanglah ke showroom kami di pusat kota. Kami menyediakan kopi gratis untuk setiap pengunjung.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-primary" style="">location_on</span>
+<p class="" style="">Jl. kartini No. 123, tanggul,Jember </p>
+</div>Selatan
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-primary" style="">schedule</span>
+<p class="" style="">Senin - Minggu: 10:00 - 21:00</p>
+</div>
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-primary" style="">call</span>
+<p class="" style="">+62 821-3280-4358</p>
+</div>
+</div>
+<div class="pt-4">
+<a class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-bold flex items-center gap-3 hover:scale-95 duration-300 w-fit" href="https://api.whatsapp.com/send?phone=6282132804358&text=Halo%20kak%2C%20selamat%20datang%20di%20Arsip%20Barang%20Bekas%F0%9F%91%8B%0AApakah%20ada%20yang%20bisa%20kami%20bantu%F0%9F%99%8F" target="_blank" style="">
+<span class="material-symbols-outlined" style="">chat</span>
+                        Hubungi via WhatsApp
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-950 w-full border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1 space-y-6">
+<div class="font-manrope font-extrabold text-xl text-teal-900 dark:text-teal-100" style="">Barangg Bekas Berrkualitas</div>
+<p class="font-inter text-sm leading-relaxed text-slate-500" style="">Platform kurasi pre-loved premium terdepan di Indonesia. Mengutamakan kualitas dan keberlanjutan.</p>
+<div class="flex gap-4">
+<span class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined text-sm" style="">public</span>
+</span>
+<span class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined text-sm" style="">alternate_email</span>
+</span>
+<span class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-on-primary transition-all duration-300">
+<span class="material-symbols-outlined text-sm" style="">camera</span>
+</span>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline font-bold text-teal-900 dark:text-teal-50" style="">Quick Links</h4>
+<ul class="space-y-4">
+<li class="" style=""><a class="text-slate-500 hover:text-teal-700 hover:underline decoration-teal-500 underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#" style="">Privacy Policy</a></li>
+<li class="" style=""><a class="text-slate-500 hover:text-teal-700 hover:underline decoration-teal-500 underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#" style="">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline font-bold text-teal-900 dark:text-teal-50" style="">Customer Care</h4>
+<ul class="space-y-4">
+<li class="" style=""><a class="text-slate-500 hover:text-teal-700 hover:underline decoration-teal-500 underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#" style="">Shipping Info</a></li>
+<li class="" style=""><a class="text-slate-500 hover:text-teal-700 hover:underline decoration-teal-500 underline-offset-4 transition-all opacity-80 hover:opacity-100" href="#" style="">Contact Support</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline font-bold text-teal-900 dark:text-teal-50" style="">Newsletter</h4>
+<p class="text-sm text-slate-500" style="">Dapatkan update koleksi terbaru langsung di email Anda.</p>
+<div class="flex gap-2">
+<input class="w-full px-4 py-2 rounded-full bg-surface-container-low border-none focus:ring-1 focus:ring-primary text-sm" placeholder="Email Anda" type="email">
+<button class="bg-primary text-on-primary p-2 rounded-full flex items-center justify-center" style="">
+<span class="material-symbols-outlined" style="">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-8 py-8 border-t border-slate-200 dark:border-slate-800 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-inter text-sm leading-relaxed text-slate-500" style="">© 2024 Barangg Bekas Berrkualitas. The Digital Archivist.</p>
+<div class="flex gap-8">
+<span class="text-xs font-label uppercase tracking-widest text-slate-400" style="">Jakarta</span>
+<span class="text-xs font-label uppercase tracking-widest text-slate-400" style="">Bandung</span>
+<span class="text-xs font-label uppercase tracking-widest text-slate-400" style="">Surabaya</span>
+</div>
+</div>
+</footer>
+<!-- Floating Action Button -->
+<button class="fixed bottom-8 right-8 w-16 h-16 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-transform md:hidden" style="">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">chat</span>
+</button>
+</body></html>
